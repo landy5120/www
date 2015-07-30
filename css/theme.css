@@ -1,0 +1,262 @@
+body > section {
+    padding: 30px 0;
+}
+
+#main-search-form {
+    padding-top: 4px;
+}
+
+#main-check-in {
+    padding-top: 10px;
+}
+
+#main-slider {
+    background-color: #fff;
+}
+
+.light-gray {
+    background-color: #f2f2f2;
+}
+
+.light-white {
+    background-color: #fff;
+}
+
+.link-list-a {
+    color: #666;
+    margin-right: 20px;
+}
+
+.no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+#recent-works .col-xs-12.col-sm-4.col-md-3 {
+    padding: 0;
+}
+
+#recent-works .row {
+    padding: 0 15px;
+}
+
+#recent-works {
+    padding-bottom: 0px;
+}
+
+.recent-work-wrap {
+    position: relative;
+}
+
+.recent-work-wrap img {
+    width: 100%;
+}
+
+.recent-work-wrap .recent-work-inner {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    opacity: 0.8;
+    top: 0;
+    width: 100%;
+}
+
+.recent-work-wrap .recent-work-inner h3 {
+    margin: 10px 0;
+}
+
+.recent-work-wrap .recent-work-inner h3 a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.recent-work-wrap .overlay {
+    background: #c52d2f none repeat scroll 0 0;
+    border-radius: 0;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms ease 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.recent-work-wrap .overlay .preview {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 0;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.recent-work-wrap:hover .overlay {
+    opacity: 1;
+}
+
+.button-outline {
+    background: rgba(0, 0, 0, 0.15) none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    margin-right: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear 0s;
+    vertical-align: middle;
+}
+
+label {
+    font-weight: normal;
+}
+
+#course-detail .thumbnail {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#course-detail a {
+    cursor: pointer;
+}
+
+.right-15pix {
+    margin-right: 15px;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+#course-detail .page-header {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#course-detail .page-header h4 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#course-detail .text-muted {
+    color: #666;
+}
+
+#course-detail .breadcrumb {
+    background: none;
+    padding-left: 0;
+}
+
+.color-red {
+    color: #ff0000
+}
+
+#myTabContent h5 {
+    color: #666;
+}
+
+#myTabContent .row {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#course-list .row {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.table-hover {
+    color: #5c5c5c;
+}
+
+#order-confirm .row {
+    border-bottom: solid 1px #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.thumbnail {
+    border: none;
+    margin-bottom: 5px;
+}
+
+#member-learning-list .list-group {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#member-learning-list .well {
+    background-color: #fff;
+}
+
+.page-header {
+    border-bottom: 1px solid #ccc;
+    margin: 0px 0 10px;
+    padding-bottom: 9.5px;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.panel {
+    border-radius: 0px;
+}
+#competitive-products .breadcrumb {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    padding: 0px;
+}
+table a:not(.btn), .table a:not(.btn) {
+    text-decoration: none;
+}
+
+
+.well {
+    border-radius: 0px;
+}
+
+#postion-list .btn-default {
+    background-color: #eee;
+    border: solid 2px #dce4ec;
+    color:#7b8a8b;
+}
+#postion-list .btn-default:focus {
+    color:#000;
+}
+
+#postion-list .form-horizontal .form-group {
+    margin-bottom: 5px;
+}
+#postion-list .breadcrumb {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.panel-heading {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#postion-detail h3 {
+    margin-top: 10.5px;
+}
+.text-muted {
+    color: #999;
+}
