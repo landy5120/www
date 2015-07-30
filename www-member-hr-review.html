@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="启承在线"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/theme.css" media="screen"/>
+    <link rel="stylesheet" href="css/timeline-v2.css" media="screen"/>
+    <title>启承在线 - 企业HR点评</title>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js">
+    </script>
+    <script src="js/respond.min.js">
+    </script>
+    <![endif]-->
+</head>
+<body>
+<section id="header">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="www-index.html" class="navbar-brand">
+                    启承在线
+                </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main-top">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main-top">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="www-index.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-list.html">
+                            职位
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-course-bang.html">
+                            课程
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-road.html">
+                            路线图
+                        </a>
+                    </li>
+                    <li>
+                        <form role="search" class="navbar-form navbar-left" id="main-search-form"
+                              action="www-search-result.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="课程,职位" class="form-control input-sm">
+                            </div>
+                            <input class="btn btn-default btn-sm" type="submit" value="搜索">
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="www-cli.html" target="_blank">
+                            客户端
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-register.html" target="_blank">
+                            登陆/注册
+                        </a>
+                    </li>
+                    <li id="main-check-in">
+                        <button class="btn btn-danger btn-sm" type="button">
+                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>签到领学币
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="member-learning-list" class="light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 light-white">
+                <div class="thumbnail">
+                    <img src="images/icon/person/2-128.png">
+                </div>
+                <div class="caption">
+                    <p class="text-center">landyjia</p>
+
+                    <p class="text-center">
+                        <small>学分累计:</small>
+                        <span class="text-warning">220</span></p>
+                    <p class="text-center">
+                        <small>学霸排名:</small>
+                        <span class="text-warning">7000</span></p>
+                    <p class="text-center">
+                        <small>学习时常:</small>
+                        <span class="text-warning">20小时</span></p>
+                </div>
+                <div class="list-group">
+                    <a href="www-member-learning-list.html" class="list-group-item">他的学习记录</a>
+                    <a href="www-member-favorite.html" class="list-group-item">他的收藏</a>
+                    <a href="www-member-hr-review.html" class="list-group-item active">企业HR点评</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="well bs-component">
+                    <h4 class="page-header">企业HR点评</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img data-holder-rendered="true"
+                                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGVkM2E5NzZmZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZWQzYTk3NmZlIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                                             style="width: 64px; height: 64px;" class="media-object"
+                                             data-src="holder.js/64x64" alt="64x64">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="text-muted">腾邦国际HR</span>
+                                    <a href="">landyjia</a><span class="text-muted">点评了</span>
+                                    <a href="">"分布式存储"</a><span class="text-muted">学习</span><br/>
+                                    <small class="right-15pix">1. 非常棒, 继续努力！</small>
+                                    <small class="text-muted">2015-06-12 13:22:32</small>
+                                    <p class="text-right">
+                                        <a href="">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>
+                                            <small class="text-info">回复</small>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="www-footer" class="light-gray">
+    <div class="container">
+        <div class="row">
+            <h4 class="page-header">&nbsp;</h4>
+
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>关于</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">关于我们</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">关注微信</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">新郎微博</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">站点地图</a></li>
+
+                    <li><a class="link-list-a" href="./help/#support">职位招聘</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是学员</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何购买课程</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何使用优惠券</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">什么是学习币</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">什么是学习码</a></li>
+                    <li><a class="link-list-a" href="./help/#api">什么是学分</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是企业</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何进行合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何开具发票</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是培训机构</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">申请合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">机构权益</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">申请为课程合作机构</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>社区互动</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">交流论坛</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员微信群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员QQ群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">课程登记</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">意见反馈</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员声音</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="www-copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <ul class="list-inline">
+                    <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 400-851-9651</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(课程合作)
+                    </li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(商务合作)
+                    </li>
+                </ul>
+                <p> Copyright&copy;2005-2015 qicheng.com 启承教育</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-1.10.2.min.js">
+</script>
+<script src="js/bootstrap.min.js">
+</script>
+</body>
+</html>

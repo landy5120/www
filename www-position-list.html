@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="启承在线"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" href="css/theme.css" media="screen"/>
+    <link rel="stylesheet" href="css/tabs.css" media="screen"/>
+    <title>启承在线</title>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js">
+    </script>
+    <script src="js/respond.min.js">
+    </script>
+    <![endif]-->
+</head>
+<body>
+<section id="header">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="www-index.html" class="navbar-brand">
+                    启承在线
+                </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main-top">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main-top">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="www-index.html">
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-list.html">
+                            职位
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-course-bang.html">
+                            课程
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-position-road.html">
+                            路线图
+                        </a>
+                    </li>
+                    <li>
+                        <form role="search" class="navbar-form navbar-left" id="main-search-form"
+                              action="www-search-result.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="课程,职位" class="form-control input-sm">
+                            </div>
+                            <input class="btn btn-default btn-sm" type="submit" value="搜索">
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="www-cli.html" target="_blank">
+                            客户端
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www-register.html" target="_blank">
+                            登陆/注册
+                        </a>
+                    </li>
+                    <li id="main-check-in">
+                        <button class="btn btn-danger btn-sm" type="button">
+                            <span aria-hidden="true" class="glyphicon glyphicon-pencil"></span>签到领学币
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="postion-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-sm-12 col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <ul class="breadcrumb">
+                            <li><a href="www-index.html">首页</a></li>
+                            <li class="active">职位</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" action="www-position-search-result.html">
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputEmail">关键字</label>
+
+                                <div class="col-lg-2">
+                                    <select id="113" class="form-control input-sm">
+                                        <option>公司名称</option>
+                                        <option>职位名</option>
+                                        <option>课程名</option>
+                                        <option>全文</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="公司名, 职位名" id="inputEmail" class="form-control input-sm">
+                                </div>
+                                <div class="col-lg-2">
+                                    <button class="btn btn-success btn-sm" type="submit"> 搜索职位</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputPassword">行业</label>
+
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="选择行业" id="inputPassword"
+                                           class="form-control input-sm">
+                                </div>
+                                <label class="col-lg-2 control-label" for="inputPassword">职能</label>
+
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="选择职能" id="2" class="form-control input-sm">
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="">清空搜索条件</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputPassword">地区</label>
+
+                                <div class="col-lg-3">
+                                    <input type="text" placeholder="选择地区" id="" class="form-control input-sm">
+                                </div>
+                                <label class="col-lg-2 control-label" for="inputPassword">企业规模</label>
+
+                                <div class="col-lg-3">
+                                    <select id="en" class="form-control input-sm">
+                                        <option>不限</option>
+                                        <option>1-49人</option>
+                                        <option>50-99人</option>
+                                        <option>100-499人</option>
+                                        <option>500-999人</option>
+                                        <option>1000-2000人</option>
+                                        <option>2000-5000人</option>
+                                        <option>5000-10000人</option>
+                                        <option>10000人以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="inputPassword">学历要求</label>
+
+                                <div class="col-lg-3">
+                                    <select id="e33n" class="form-control input-sm">
+                                        <option>初中及以下</option>
+                                        <option>高中</option>
+                                        <option>中技</option>
+                                        <option>中专</option>
+                                        <option>大专</option>
+                                        <option>本科</option>
+                                        <option>硕士</option>
+                                        <option>博士</option>
+                                        <option>不限</option>
+                                    </select>
+                                </div>
+                                <label class="col-lg-2 control-label" for="inputPassword">工作类型</label>
+
+                                <div class="col-lg-3">
+                                    <select id="e3n" class="form-control input-sm">
+                                        <option>实习</option>
+                                        <option>兼职</option>
+                                        <option>全职</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label" for="11">工作年限</label>
+
+                                <div class="col-lg-3">
+                                    <select id="11" class="form-control input-sm">
+                                        <option>在读学生</option>
+                                        <option>应届毕业生</option>
+                                        <option>1年</option>
+                                        <option>2年</option>
+                                        <option>3-4年</option>
+                                        <option>5-7年</option>
+                                        <option>8-10年</option>
+                                        <option>10年以上</option>
+                                        <option>不限</option>
+                                    </select>
+
+                                </div>
+                                <label class="col-lg-2 control-label" for="select">企业性质</label>
+
+                                <div class="col-lg-3">
+                                    <select id="select" class="form-control input-sm">
+                                        <option>不限</option>
+                                        <option>外商独资/外企办事处</option>
+                                        <option>合资企业</option>
+                                        <option>民营/私营企业</option>
+                                        <option>国有企业</option>
+                                        <option>国内上市企业</option>
+                                        <option>政府机关/非盈利机构</option>
+                                        <option>事业单位</option>
+                                        <option>其他</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="text-muted">当前搜索: 深圳 ＋ 互联网/移动互联网/电子商务,计算机软件,通信(设备/运营/增值) ＋ 产品经理/主管,信息技术经理/主管</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4 class="page-header">热门搜索职位</h4>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a><br/>
+                <a href="">软件开发工程师</a>
+            </div>
+            <div class="col-md-10">
+                <div class="tabbable">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab" aria-expanded="true">
+                                按职能搜索
+                            </a>
+                        </li>
+
+                        <li class="tab-red">
+                            <a href="#dropdown1" data-toggle="tab" aria-expanded="false">
+                                按照行业搜索
+                            </a>
+                        </li>
+                        <li class="tab-red">
+                            <a href="#profile" data-toggle="tab" aria-expanded="false">
+                                按地区搜索
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <h4 class="text-muted">通用职能</h4>
+                            <a href="" class="right-15pix">互联网/游戏/软件</a>
+                            <a href="" class="right-15pix">人力资源</a>
+                            <a href="" class="right-15pix">财务</a>
+                            <a href="" class="right-15pix">市场营销</a>
+                            <a href="" class="right-15pix">销售/客户服务</a>
+                            <a href="" class="right-15pix">行政</a>
+                            <a href="" class="right-15pix">法务</a>
+                            <a href="" class="right-15pix">企业IT</a>
+                            <a href="" class="right-15pix">公关</a>
+                            <h4 class="text-muted">行业职能</h4>
+                            <a href="" class="right-15pix">互联网/游戏/软件</a>
+                            <a href="" class="right-15pix">电子/通信/硬件</a>
+                            <a href="" class="right-15pix">房地产/建筑/物业</a>
+                            <a href="" class="right-15pix">金融</a>
+                            <a href="" class="right-15pix">消费品</a>
+                            <a href="" class="right-15pix">汽车/机械/制造</a>
+                            <a href="" class="right-15pix">服务/外包/中介</a>
+                            <a href="" class="right-15pix">广告/传媒/教育/文化</a><br/>
+                            <a href="" class="right-15pix">交通/贸易/物流</a>
+                            <a href="" class="right-15pix">制药/医疗</a>
+                            <a href="" class="right-15pix">能源/化工/环保</a>
+                            <a href="" class="right-15pix">政府/农林牧渔</a>
+                        </div>
+
+                        <div class="tab-pane" id="profile">
+                            <h4 class="text-muted">热门城市</h4>
+                            <a href="" class="right-15pix">北京</a>
+                            <a href="" class="right-15pix">上海</a>
+                            <a href="" class="right-15pix">广州</a>
+                            <a href="" class="right-15pix">深圳</a>
+                            <a href="" class="right-15pix">重庆</a>
+                            <a href="" class="right-15pix">成都</a>
+                            <a href="" class="right-15pix">苏州</a>
+                            <a href="" class="right-15pix">杭州</a><br/>
+                            <h4 class="text-muted">华北地区</h4>
+                            <span>河北省： </span>
+                            <a href="" class="right-15pix">石家庄</a>
+                            <a href="" class="right-15pix">廊坊</a>
+                            <a href="" class="right-15pix">保定</a>
+                            <a href="" class="right-15pix">唐山</a>
+                            <a href="" class="right-15pix">秦皇岛</a>
+                            <a href="" class="right-15pix">邯郸</a>
+                            <a href="" class="right-15pix">沧州</a>
+                            <a href="" class="right-15pix">张家口</a>
+                            <a href="" class="right-15pix">	承德</a>
+                            <a href="" class="right-15pix">邢台</a>
+                            <a href="" class="right-15pix">衡水</a>
+                            <a href="" class="right-15pix">燕郊开发区</a><br/>
+                            <span>山西省： </span>
+                            <a href="" class="right-15pix">太原</a>
+                            <a href="" class="right-15pix">运城</a>
+                            <a href="" class="right-15pix">大同</a>
+                            <a href="" class="right-15pix">临汾</a>
+                            <a href="" class="right-15pix">长治</a>
+                            <a href="" class="right-15pix">晋城</a>
+                            <a href="" class="right-15pix">阳泉</a>
+                            <a href="" class="right-15pix">朔州</a>
+                            <a href="" class="right-15pix">晋中</a>
+                            <a href="" class="right-15pix">忻州</a>
+                            <a href="" class="right-15pix">吕梁</a><br/>
+                            <span>内蒙古： </span>
+                            <a href="" class="right-15pix">呼和浩特</a>
+                            <a href="" class="right-15pix">赤峰</a>
+                            <a href="" class="right-15pix">包头</a>
+                            <a href="" class="right-15pix">通辽</a>
+                            <a href="" class="right-15pix">鄂尔多斯</a>
+                            <a href="" class="right-15pix">巴彦淖尔</a>
+                            <a href="" class="right-15pix">乌海</a>
+                            <a href="" class="right-15pix">呼伦贝尔</a>
+                            <a href="" class="right-15pix">乌兰察布</a>
+                            <a href="" class="right-15pix">兴安盟</a>
+                            <a href="" class="right-15pix">锡林郭勒盟</a>
+                            <a href="" class="right-15pix">阿拉善盟</a><br/>
+                            <h4 class="text-muted">东北地区</h4>
+                            <span>辽宁省： </span>
+                            <a href="" class="right-15pix">沈阳</a>
+                            <a href="" class="right-15pix">大连</a>
+                            <a href="" class="right-15pix">鞍山</a>
+                            <a href="" class="right-15pix">营口</a>
+                            <a href="" class="right-15pix">抚顺</a>
+                            <a href="" class="right-15pix">锦州</a>
+                            <a href="" class="right-15pix">丹东</a>
+                            <a href="" class="right-15pix">葫芦岛</a>
+                            <a href="" class="right-15pix">本溪</a>
+                            <a href="" class="right-15pix">辽阳</a>
+                            <a href="" class="right-15pix">铁岭</a>
+                            <a href="" class="right-15pix">盘锦</a>
+                            <a href="" class="right-15pix">朝阳</a>
+                            <a href="" class="right-15pix">阜新</a><br/>
+                            <span>吉林省： </span>
+                            <a href="" class="right-15pix">长春</a>
+                            <a href="" class="right-15pix">吉林</a>
+                            <a href="" class="right-15pix">辽源</a>
+                            <a href="" class="right-15pix">通化</a>
+                            <a href="" class="right-15pix">四平</a>
+                            <a href="" class="right-15pix">松原</a>
+                            <a href="" class="right-15pix">延吉</a>
+                            <a href="" class="right-15pix">白山</a>
+                            <a href="" class="right-15pix">白城</a>
+                            <a href="" class="right-15pix">延边</a><br/>
+                            <span>黑龙江省： </span>
+                            <a href="" class="right-15pix">哈尔滨</a>
+                            <a href="" class="right-15pix">伊春</a>
+                            <a href="" class="right-15pix">绥化</a>
+                            <a href="" class="right-15pix">大庆</a>
+                            <a href="" class="right-15pix">齐齐哈尔</a>
+                            <a href="" class="right-15pix">牡丹江</a>
+                            <a href="" class="right-15pix">佳木斯</a>
+                            <a href="" class="right-15pix">鸡西</a>
+                            <a href="" class="right-15pix">鹤岗</a>
+                            <a href="" class="right-15pix">双鸭山</a>
+                            <a href="" class="right-15pix">黑河</a>
+                            <a href="" class="right-15pix">七台河</a>
+                            <a href="" class="right-15pix">大兴安岭</a><br/>
+                            <h4 class="text-muted">华东地区</h4>
+                            <span>江苏省： </span>
+                            <a href="" class="right-15pix">南京</a>
+                            <a href="" class="right-15pix">苏州</a>
+                            <a href="" class="right-15pix">无锡</a>
+                            <a href="" class="right-15pix">常州</a>
+                            <a href="" class="right-15pix">昆山</a>
+                            <a href="" class="right-15pix">常熟</a>
+                            <a href="" class="right-15pix">扬州</a>
+                            <a href="" class="right-15pix">南通</a>
+                            <a href="" class="right-15pix">镇江</a>
+                            <a href="" class="right-15pix">徐州</a>
+                            <a href="" class="right-15pix">连云港</a>
+                            <a href="" class="right-15pix">盐城</a>
+                            <a href="" class="right-15pix">张家港</a><br/>
+                            <span>浙江省： </span>
+                            <a href="" class="right-15pix">杭州</a>
+                            <a href="" class="right-15pix">宁波</a>
+                            <a href="" class="right-15pix">温州</a>
+                            <a href="" class="right-15pix">绍兴</a>
+                            <a href="" class="right-15pix">金华</a>
+                            <a href="" class="right-15pix">嘉兴</a>
+                            <a href="" class="right-15pix">台州</a>
+                            <a href="" class="right-15pix">湖州</a>
+                            <a href="" class="right-15pix">丽水</a>
+                            <a href="" class="right-15pix">舟山</a>
+                            <a href="" class="right-15pix">衢州</a><br/>
+                            <span>安徽省： </span>
+                            <a href="" class="right-15pix">合肥</a>
+                            <a href="" class="right-15pix">芜湖</a>
+                            <a href="" class="right-15pix">安庆</a>
+                            <a href="" class="right-15pix">马鞍山</a>
+                            <a href="" class="right-15pix">蚌埠</a>
+                            <a href="" class="right-15pix">阜阳</a>
+                            <a href="" class="right-15pix">铜陵</a>
+                            <a href="" class="right-15pix">滁州</a>
+                            <a href="" class="right-15pix">黄山</a>
+                            <a href="" class="right-15pix">淮南</a>
+                            <a href="" class="right-15pix">六安</a><br/>
+                            <span>福建省： </span>
+                            <a href="" class="right-15pix">福州</a>
+                            <a href="" class="right-15pix">厦门</a>
+                            <a href="" class="right-15pix">泉州</a>
+                            <a href="" class="right-15pix">漳州</a>
+                            <a href="" class="right-15pix">莆田</a>
+                            <a href="" class="right-15pix">三明</a>
+                            <a href="" class="right-15pix">南平</a>
+                            <a href="" class="right-15pix">宁德</a>
+                            <a href="" class="right-15pix">龙岩</a><br/>
+                            <span>江西省： </span>
+                            <a href="" class="right-15pix">南昌</a>
+                            <a href="" class="right-15pix">九江</a>
+                            <a href="" class="right-15pix">景德镇</a>
+                            <a href="" class="right-15pix">萍乡</a>
+                            <a href="" class="right-15pix">新余</a>
+                            <a href="" class="right-15pix">鹰潭</a>
+                            <a href="" class="right-15pix">赣州</a>
+                            <a href="" class="right-15pix">吉安</a>
+                            <a href="" class="right-15pix">宜春</a>
+                            <a href="" class="right-15pix">抚州</a>
+                            <a href="" class="right-15pix">上饶</a><br/>
+                            <span>山东省： </span>
+                            <a href="" class="right-15pix">济南</a>
+                            <a href="" class="right-15pix">青岛</a>
+                            <a href="" class="right-15pix">烟台</a>
+                            <a href="" class="right-15pix">潍坊</a>
+                            <a href="" class="right-15pix">威海</a>
+                            <a href="" class="right-15pix">淄博</a>
+                            <a href="" class="right-15pix">临沂</a>
+                            <a href="" class="right-15pix">济宁</a>
+                            <a href="" class="right-15pix">东营</a>
+                            <a href="" class="right-15pix">泰安</a>
+                            <a href="" class="right-15pix">日照</a>
+                            <a href="" class="right-15pix">德州</a>
+                            <a href="" class="right-15pix">菏泽</a>
+                            <a href="" class="right-15pix">滨州</a>
+                            <a href="" class="right-15pix">枣庄</a>
+                            <a href="" class="right-15pix">聊城</a>
+                            <a href="" class="right-15pix">莱芜</a><br/>
+                            <h4 class="text-muted">中南地区</h4>
+                            <span>河南省： </span>
+                            <a href="" class="right-15pix">郑州</a><a href="" class="right-15pix">洛阳</a><a href="" class="right-15pix">开封</a><a href="" class="right-15pix">焦作</a>
+                            <a href="" class="right-15pix">南阳</a><a href="" class="right-15pix">新乡</a><a href="" class="right-15pix">周口</a><a href="" class="right-15pix">安阳</a>
+                            <a href="" class="right-15pix">平顶山</a><a href="" class="right-15pix">许昌</a><a href="" class="right-15pix">信阳</a><a href="" class="right-15pix">商丘</a>
+                            <a href="" class="right-15pix">驻马店</a><a href="" class="right-15pix">漯河</a><a href="" class="right-15pix">濮阳</a><a href="" class="right-15pix">鹤壁</a>
+                            <a href="" class="right-15pix">三门峡</a><a href="" class="right-15pix">济源</a><a href="" class="right-15pix">邓州</a><a href="" class="right-15pix"></a>
+                            <br/>
+                            <span>湖北省： </span>
+                            <a href="" class="right-15pix">武汉</a><a href="" class="right-15pix">黄石</a><a href="" class="right-15pix">随州</a>
+                            <a href="" class="right-15pix">宜昌</a><a href="" class="right-15pix">荆州</a><a href="" class="right-15pix">天门</a>
+                            <a href="" class="right-15pix">十堰</a><a href="" class="right-15pix">黄冈</a><a href="" class="right-15pix">孝感</a>
+                            <a href="" class="right-15pix">鄂州</a><a href="" class="right-15pix">潜江</a><a href="" class="right-15pix">咸宁</a>
+                            <a href="" class="right-15pix">仙桃</a><a href="" class="right-15pix">襄阳</a><a href="" class="right-15pix">神农架</a>
+                            <a href="" class="right-15pix">恩施</a><a href="" class="right-15pix">荆门</a><a href="" class="right-15pix"></a>
+                            <br/><span>湖南省： </span>
+                            <a href="" class="right-15pix">长沙</a><a href="" class="right-15pix">株洲</a><a href="" class="right-15pix">湘潭</a><a href="" class="right-15pix">衡阳</a>
+                            <a href="" class="right-15pix">岳阳</a><a href="" class="right-15pix">常德</a><a href="" class="right-15pix">益阳</a><a href="" class="right-15pix">郴州</a>
+                            <a href="" class="right-15pix">邵阳</a><a href="" class="right-15pix">怀化</a><a href="" class="right-15pix">娄底</a><a href="" class="right-15pix">永州</a>
+                            <a href="" class="right-15pix">张家界</a><a href="" class="right-15pix">湘西</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>广东省： </span>
+                            <a href="" class="right-15pix">广州</a><a href="" class="right-15pix">深圳</a><a href="" class="right-15pix">惠州</a><a href="" class="right-15pix">汕头</a>
+                            <a href="" class="right-15pix">珠海</a><a href="" class="right-15pix">佛山</a><a href="" class="right-15pix">中山</a><a href="" class="right-15pix">东莞</a>
+                            <a href="" class="right-15pix">韶关</a><a href="" class="right-15pix">江门</a><a href="" class="right-15pix">湛江</a><a href="" class="right-15pix">肇庆</a>
+                            <a href="" class="right-15pix">清远</a><a href="" class="right-15pix">潮州</a><a href="" class="right-15pix">河源</a><a href="" class="right-15pix">揭阳</a>
+                            <a href="" class="right-15pix">茂名</a><a href="" class="right-15pix">汕尾</a><a href="" class="right-15pix">梅州</a><a href="" class="right-15pix">开平</a>
+                            <a href="" class="right-15pix">阳江</a><a href="" class="right-15pix">云浮</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>广西： </span>
+                            <a href="" class="right-15pix">南宁</a><a href="" class="right-15pix">桂林</a><a href="" class="right-15pix">柳州</a><a href="" class="right-15pix">北海</a>
+                            <a href="" class="right-15pix">玉林</a><a href="" class="right-15pix">梧州</a><a href="" class="right-15pix">防城港</a><a href="" class="right-15pix">钦州</a>
+                            <a href="" class="right-15pix">贵港</a><a href="" class="right-15pix">百色</a><a href="" class="right-15pix">河池</a><a href="" class="right-15pix">来宾</a>
+                            <a href="" class="right-15pix">崇左</a><a href="" class="right-15pix">贺州</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>海南省： </span>
+                            <a href="" class="right-15pix">海口</a><a href="" class="right-15pix">三亚</a><a href="" class="right-15pix">洋浦经济开发区</a><a href="" class="right-15pix">文昌</a>
+                            <a href="" class="right-15pix">琼海</a><a href="" class="right-15pix">万宁</a><a href="" class="right-15pix">儋州</a><a href="" class="right-15pix">东方</a>
+                            <a href="" class="right-15pix">五指山</a><a href="" class="right-15pix">定安</a><a href="" class="right-15pix">屯昌</a><a href="" class="right-15pix">澄迈</a>
+                            <a href="" class="right-15pix">临高</a><a href="" class="right-15pix">三沙</a><a href="" class="right-15pix">琼中</a><a href="" class="right-15pix">保亭</a>
+                            <a href="" class="right-15pix">白沙</a><a href="" class="right-15pix">昌江</a><a href="" class="right-15pix">乐东</a><a href="" class="right-15pix">陵水</a>
+                            <h4 class="text-muted">西南地区</h4>
+                            <br/><span>四川省： </span>
+                            <a href="" class="right-15pix">成都</a><a href="" class="right-15pix">绵阳</a><a href="" class="right-15pix">乐山</a><a href="" class="right-15pix">泸州</a>
+                            <a href="" class="right-15pix">德阳</a><a href="" class="right-15pix">宜宾</a><a href="" class="right-15pix">自贡</a><a href="" class="right-15pix">内江</a>
+                            <a href="" class="right-15pix">攀枝花</a><a href="" class="right-15pix">南充</a><a href="" class="right-15pix">眉山</a><a href="" class="right-15pix">广安</a>
+                            <a href="" class="right-15pix">资阳</a><a href="" class="right-15pix">遂宁</a><a href="" class="right-15pix">广元</a><a href="" class="right-15pix">达州</a>
+                            <a href="" class="right-15pix">雅安</a><a href="" class="right-15pix">西昌</a><a href="" class="right-15pix">巴中</a><a href="" class="right-15pix">甘孜</a>
+                            <a href="" class="right-15pix">阿坝</a><a href="" class="right-15pix">凉山</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>贵州省： </span>
+                            <a href="" class="right-15pix">贵阳</a><a href="" class="right-15pix">遵义</a><a href="" class="right-15pix">六盘水</a><a href="" class="right-15pix">安顺</a>
+                            <a href="" class="right-15pix">铜仁</a><a href="" class="right-15pix">毕节</a><a href="" class="right-15pix">黔西南</a><a href="" class="right-15pix">黔东南</a>
+                            <a href="" class="right-15pix">黔南</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>云南省： </span>
+                            <a href="" class="right-15pix">昆明</a><a href="" class="right-15pix">曲靖</a><a href="" class="right-15pix">玉溪</a><a href="" class="right-15pix">大理</a>
+                            <a href="" class="right-15pix">丽江</a><a href="" class="right-15pix">红河州</a><a href="" class="right-15pix">普洱</a><a href="" class="right-15pix">保山</a>
+                            <a href="" class="right-15pix">昭通</a><a href="" class="right-15pix">文山</a><a href="" class="right-15pix">西双版纳</a><a href="" class="right-15pix">德宏</a>
+                            <a href="" class="right-15pix">楚雄</a><a href="" class="right-15pix">临沧</a><a href="" class="right-15pix">怒江</a><a href="" class="right-15pix">迪庆</a>
+                            <br/><span>西藏： </span>
+                            <a href="" class="right-15pix">拉萨</a><a href="" class="right-15pix">日喀则</a><a href="" class="right-15pix">林芝</a><a href="" class="right-15pix">山南</a>
+                            <a href="" class="right-15pix">昌都</a><a href="" class="right-15pix">那曲</a><a href="" class="right-15pix">阿里</a><a href="" class="right-15pix"></a>
+                            <h4 class="text-muted">西北地区</h4>
+                            <br/><span>陕西省： </span>
+                            <a href="" class="right-15pix">西安</a><a href="" class="right-15pix">咸阳</a><a href="" class="right-15pix">宝鸡</a><a href="" class="right-15pix">铜川</a>
+                            <a href="" class="right-15pix">延安</a><a href="" class="right-15pix">渭南</a><a href="" class="right-15pix">榆林</a><a href="" class="right-15pix">汉中</a>
+                            <a href="" class="right-15pix">安康</a><a href="" class="right-15pix">商洛</a><a href="" class="right-15pix">杨凌</a><a href="" class="right-15pix"></a>
+                            <br/><span>甘肃省： </span>
+                            <a href="" class="right-15pix">兰州</a><a href="" class="right-15pix">金昌</a><a href="" class="right-15pix">嘉峪关</a><a href="" class="right-15pix">酒泉</a>
+                            <a href="" class="right-15pix">天水</a><a href="" class="right-15pix">武威</a><a href="" class="right-15pix">白银</a><a href="" class="right-15pix">张掖</a>
+                            <a href="" class="right-15pix">平凉</a><a href="" class="right-15pix">定西</a><a href="" class="right-15pix">陇南</a><a href="" class="right-15pix">庆阳</a>
+                            <a href="" class="right-15pix">临夏</a><a href="" class="right-15pix">甘南</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>青海省： </span>
+                            <a href="" class="right-15pix">西宁</a><a href="" class="right-15pix">海东</a><a href="" class="right-15pix">海西</a><a href="" class="right-15pix">海北</a>
+                            <a href="" class="right-15pix">黄南</a><a href="" class="right-15pix">海南</a><a href="" class="right-15pix">果洛</a><a href="" class="right-15pix">玉树</a>
+                            <br/><span>宁夏： </span>
+                            <a href="" class="right-15pix">银川</a><a href="" class="right-15pix">吴忠</a><a href="" class="right-15pix">中卫</a><a href="" class="right-15pix">石嘴山</a>
+                            <a href="" class="right-15pix">固原</a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a><a href="" class="right-15pix"></a>
+                            <br/><span>新疆： </span>
+                            <a href="" class="right-15pix">乌鲁木齐</a><a href="" class="right-15pix">克拉玛依</a><a href="" class="right-15pix">喀什地区</a><a href="" class="right-15pix">伊犁</a>
+                            <a href="" class="right-15pix">阿克苏</a><a href="" class="right-15pix">哈密</a><a href="" class="right-15pix">石河子</a><a href="" class="right-15pix">阿拉尔</a>
+                            <a href="" class="right-15pix">五家渠</a><a href="" class="right-15pix">图木舒克</a><a href="" class="right-15pix">昌吉</a><a href="" class="right-15pix">阿勒泰</a>
+                            <a href="" class="right-15pix">吐鲁番</a><a href="" class="right-15pix">塔城</a><a href="" class="right-15pix">和田</a><a href="" class="right-15pix">克孜勒苏柯尔克孜</a>
+                            <a href="" class="right-15pix">巴音郭楞</a><a href="" class="right-15pix">博尔塔拉</a><a href="" class="right-15pix"></a><a href="" class="right-15pix">
+                        </a>
+                            <br/><h4 class="text-muted">港澳台</h4>
+                            <a href="" class="right-15pix">香港</a>
+                            <a href="" class="right-15pix">澳门</a>
+                            <a href="" class="right-15pix">台湾</a>
+                        </div>
+
+                        <div class="tab-pane" id="dropdown1">
+                            <h4 class="text-muted">互联网/游戏/软件</h4>
+                            <a href="" class="right-15pix">互联网/移动互联网/电子商务</a>
+                            <a href="" class="right-15pix">网络游戏</a>
+                            <a href="" class="right-15pix">计算机软件</a>
+                            <a href="" class="right-15pix">IT服务/系统集成</a>
+                            <h4 class="text-muted">电子/通信/硬件</h4>
+                            <a href="" class="right-15pix">电子技术/半导体/集成电路</a>
+                            <a href="" class="right-15pix">通信(设备/运营/增值)</a>
+                            <a href="" class="right-15pix">计算机硬件/网络设备</a>
+                            <h4 class="text-muted">房地产/建筑/物业</h4>
+                            <a href="" class="right-15pix">房地产开发/建筑/建材/工程</a>
+                            <a href="" class="right-15pix">规划/设计/装潢</a>
+                            <a href="" class="right-15pix">房地产服务(物业管理/地产经纪)</a>
+                            <h4 class="text-muted">金融</h4>
+                            <a href="" class="right-15pix">银行</a>
+                            <a href="" class="right-15pix">保险</a>
+                            <a href="" class="right-15pix">基金/证券/期货/投资</a>
+                            <a href="" class="right-15pix">会计/审计</a>
+                            <a href="" class="right-15pix">信托/担保/拍卖/典当</a>
+                            <h4 class="text-muted">消费品</h4>
+                            <a href="" class="right-15pix">食品/饮料/烟酒/日化</a>
+                            <a href="" class="right-15pix">百货/批发/零售</a>
+                            <a href="" class="right-15pix">服装服饰/纺织/皮革</a>
+                            <a href="" class="right-15pix">家具/家电</a>
+                            <a href="" class="right-15pix">办公用品及设备</a>
+                            <a href="" class="right-15pix">奢侈品/收藏品</a>
+                            <a href="" class="right-15pix">工艺品/珠宝/玩具</a>
+                            <h4 class="text-muted">汽车/机械/制造</h4>
+                            <a href="" class="right-15pix">汽车/摩托车</a>
+                            <a href="" class="right-15pix">机械制造/机电/重工</a>
+                            <a href="" class="right-15pix">印刷/包装/造纸</a>
+                            <a href="" class="right-15pix">原材料及加工</a>
+                            <a href="" class="right-15pix">仪器/仪表/工业自动化/电气</a>
+                            <h4 class="text-muted">服务/外包/中介</h4>
+                            <a href="" class="right-15pix">专业服务(咨询/财会/法律/翻译等)</a>
+                            <a href="" class="right-15pix">中介服务</a>
+                            <a href="" class="right-15pix">外包服务</a>
+                            <a href="" class="right-15pix">检测/认证</a>
+                            <a href="" class="right-15pix">旅游/酒店/餐饮服务/生活服务</a>
+                            <a href="" class="right-15pix">娱乐/休闲/体育</a>
+                            <a href="" class="right-15pix">租赁服务</a>
+                            <h4 class="text-muted">广告/传媒/教育/文化</h4>
+                            <a href="" class="right-15pix">广告/公关/市场推广/会展</a>
+                            <a href="" class="right-15pix">影视/媒体/艺术/文化/出版</a>
+                            <a href="" class="right-15pix">教育/培训/学术/科研/院校</a>
+                            <h4 class="text-muted">交通/贸易/物流</h4>
+                            <a href="" class="right-15pix">交通/物流/运输</a>
+                            <a href="" class="right-15pix">贸易/进出口</a>
+                            <a href="" class="right-15pix">航空/航天</a>
+                            <h4 class="text-muted">制药/医疗</h4>
+                            <a href="" class="right-15pix">制药/生物工程</a>
+                            <a href="" class="right-15pix">医疗/保健/美容/卫生服务</a>
+                            <a href="" class="right-15pix">医疗设备/器械</a>
+                            <h4 class="text-muted">能源/化工/环保</h4>
+                            <a href="" class="right-15pix">能源(电力/水利)</a>
+                            <a href="" class="right-15pix">石油/石化/化工</a>
+                            <a href="" class="right-15pix">采掘/冶炼/矿产</a>
+                            <a href="" class="right-15pix">环保</a>
+                            <a href="" class="right-15pix">新能源</a>
+                            <h4 class="text-muted">政府/农林牧渔</h4>
+                            <a href="" class="right-15pix">政府/公共事业/非营利机构</a>
+                            <a href="" class="right-15pix">农/林/牧/渔</a>
+                            <a href="" class="right-15pix">其他</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="www-footer" class="light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>关于</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">关于我们</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">关注微信</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">新郎微博</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">站点地图</a></li>
+
+                    <li><a class="link-list-a" href="./help/#support">职位招聘</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是学员</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何购买课程</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何使用优惠券</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">什么是学习币</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">什么是学习码</a></li>
+                    <li><a class="link-list-a" href="./help/#api">什么是学分</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是企业</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何进行合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何开具发票</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是培训机构</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">申请合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">机构权益</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">申请为课程合作机构</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>社区互动</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">交流论坛</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员微信群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员QQ群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">课程登记</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">意见反馈</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员声音</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="www-copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <ul class="list-inline">
+                    <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 400-851-9651</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(课程合作)
+                    </li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(商务合作)
+                    </li>
+                </ul>
+                <p> Copyright&copy;2005-2015 qicheng.com 启承教育</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+<script src="js/jquery-1.10.2.min.js">
+</script>
+<script src="js/bootstrap.min.js">
+</script>
+</body>
+</html>
