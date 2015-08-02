@@ -204,7 +204,7 @@
         </div>
     </div>
 </section>
-<section id="job-hunter-solution-step-1">
+<section id="job-hunter-solution-complete">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-xs-12 col-md-2">
@@ -214,14 +214,14 @@
             <div class="col-sm-12 col-xs-12 col-md-10">
                 <div data-target="#WiredWizardsteps" class="wizard wizard-wired" id="WiredWizard">
                     <ul class="steps">
-                        <li class="active" data-target="#wiredstep1"><span class="step">1</span><span
+                        <li class="complete" data-target="#wiredstep1"><span class="step">1</span><span
                                 class="title">注册</span><span class="chevron"></span></li>
 
-                        <li data-target="#wiredstep2"><span class="step">2</span><span
-                                class="title">填写求职意向</span>
+                        <li data-target="#wiredstep2" class="complete"><span class="step">2</span><span
+                                class="title">填写求才意向信息</span>
                             <span class="chevron"></span></li>
-                        <li data-target="#wiredstep3" class=""><span class="step">3</span><span
-                                class="title">生成求职方案</span>
+                        <li data-target="#wiredstep3" class="complete"><span class="step">3</span><span
+                                class="title">获取人才信息</span>
                             <span class="chevron"></span></li>
                     </ul>
                 </div>
@@ -229,32 +229,98 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">注册</div>
+                <div class="alert alert-dismissible alert-warning">
+                    <button data-dismiss="alert" class="close" type="button">×</button>
+                    <strong>恭喜你!</strong> 系统成功为您发现10个人才, 该<a class="alert-link" href="#">人才需求意向</a>已经保存到你的账号.
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">发现人才</div>
                     <div class="panel-body">
-                        <form class="form-horizontal" action="www-job-hunter-solution-will.html">
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="wherego">邮箱</label>
-                                <div class="col-lg-8">
-                                    <input type="text" placeholder="" id="wherego" class="form-control input-sm" value="yib304@163.com">
-                                    <p class="text-muted">用来登陆系统, 找回密码</p>
-                                </div>
+                        <h4>您的人才意向信息</h4>
+                        <p>我想要<i class="text-info">985工程本科, 计算机科学与技术专业; </i> <i class="text-info">应届毕业生</i>
+                        </p>
+                        <h4>你发现的人才列表</h4>
+                        <table class="table table-hover table-responsive">
+                            <thead>
+                            <tr>
+                                <th>人才分类</th><th>人才数量</th><th>毕业院校</th><th>在校成绩及表现</th><th>平台学习及表现</th><th>职位匹配系数</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>一类</td>
+                                    <td><a href=""> 200</a></td>
+                                    <td>985/211院校</td>
+                                    <td>
+                                        <span>奖学金: </span><span class="text-danger">5次及以上</span><br/>
+                                        <span>英语: </span><span class="text-danger">四级及以上</span><br/>
+                                    </td>
+                                    <td>
+                                        <span>积分: </span><span class="text-danger">100及以上</span><br/>
+                                        <span>企业关注: </span><span class="text-danger">20及以上</span><br/>
+                                    </td>
+                                    <td>0.98</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-success">关注全部</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>二类</td>
+                                    <td><a href=""> 200</a></td>
+                                    <td>一般院校</td>
+                                    <td>
+                                        <span>奖学金: </span><span class="text-danger">5次及以上</span><br/>
+                                        <span>英语: </span><span class="text-danger">四级及以上</span><br/>
+                                    </td>
+                                    <td>
+                                        <span>积分: </span><span class="text-danger">100及以上</span><br/>
+                                        <span>企业关注: </span><span class="text-danger">20及以上</span><br/>
+                                    </td>
+                                    <td>0.98</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-success">关注全部</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>三类</td>
+                                    <td><a href=""> 200</a></td>
+                                    <td>一般高校</td>
+                                    <td>
+                                        <span>奖学金: </span><span class="text-danger">1次及以上</span><br/>
+                                        <span>英语: </span><span class="text-danger">四级及以上</span><br/>
+                                    </td>
+                                    <td>
+                                        <span>积分: </span><span class="text-danger">100及以上</span><br/>
+                                        <span>企业关注: </span><span class="text-danger">20及以上</span><br/>
+                                    </td>
+                                    <td>0.98</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-success">关注全部</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>四类</td>
+                                    <td><a href=""> 200</a></td>
+                                    <td>一般高校</td>
+                                    <td>
+                                        <span>奖学金: </span><span class="text-danger">无</span><br/>
+                                        <span>英语: </span><span class="text-danger">无</span><br/>
+                                    </td>
+                                    <td>
+                                        <span>积分: </span><span class="text-danger">20及以上</span><br/>
+                                        <span>企业关注: </span><span class="text-danger">不限</span><br/>
+                                    </td>
+                                    <td>0.98</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-success">关注全部</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            </div>
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label" for="whatido">密码</label>
-                                <div class="col-lg-8">
-                                    <input type="text" placeholder="" id="whatido" class="form-control input-sm" value="******">
-                                    <input type="checkbox"> 我已经阅读并且同意<a href="">"offer在约注册个人注册协议"</a>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-lg-offset-2 col-ls-8">
-                                    <button type="submit" class="btn btn-sm btn-success">注册并进入下一步</button>
-                                    <a href="www-login.html">已有账号, 直接登陆</a>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

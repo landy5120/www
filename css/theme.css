@@ -17,7 +17,7 @@ body > section {
     background:rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
     filter:Alpha(opacity=80); background:#fff;/*实现IE背景透明*/
 }
-.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+#job-hunter-solution-complete .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
     border-top: 1px solid #ddd;
     line-height: 1.42857;
     padding: 8px;
