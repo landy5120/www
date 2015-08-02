@@ -1,7 +1,45 @@
+body {
+    font-size: 14px;
+}
 body > section {
     padding: 30px 0;
 }
 
+#home-main-register {
+    position: absolute;
+    left: 7%;
+    top: 90px;
+    margin: 0px;
+    padding: 10px 20px;
+    height: 240px;
+    width: 300px;
+    z-index:1;
+    background:rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+    filter:Alpha(opacity=80); background:#fff;/*实现IE背景透明*/
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: 1px solid #ddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+    vertical-align: bottom;
+}
+#header .well {
+    margin: 0px;
+    padding: 0px 20px;
+}
+#header .page-header {
+    padding-top: 12px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+#header .dropdown-menu {
+    font-size: 12px;
+    line-height: 14px;
+}
 #main-search-form {
     padding-top: 4px;
 }
@@ -259,4 +297,9 @@ table a:not(.btn), .table a:not(.btn) {
 }
 .text-muted {
     color: #999;
+}
+@media (min-width:769px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }

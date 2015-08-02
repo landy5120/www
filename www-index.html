@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="generator" content="启承在线"/>
+    <meta name="generator" content="offer在约"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="css/theme.css" media="screen"/>
-    <title>启承在线</title>
+    <title>offer在约</title>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js">
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a href="www-index.html" class="navbar-brand">
-                    启承在线
+                    offer在约
                 </a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main-top">
                     <span class="icon-bar"></span>
@@ -39,13 +39,14 @@
                     </li>
                     <li>
                         <a href="www-position-list.html">
-                            职位
+                            我要求职
                         </a>
                     </li>
+
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" id="couse-nav"
                            href="www-position-course-bang.html">
-                            课程
+                            我要学习
                             <span class="caret">
 							</span>
                         </a>
@@ -159,15 +160,20 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="www-found-talent.html">
+                            发现人才
+                        </a>
+                    </li>
+                    <li>
                         <a href="www-position-road.html">
-                            路线图
+                            职业路线
                         </a>
                     </li>
                     <li>
                         <form role="search" class="navbar-form navbar-left" id="main-search-form"
-                              action="www-search-result.html">
+                              action="www-position-search-result.html">
                             <div class="form-group">
-                                <input type="text" placeholder="课程,职位" class="form-control input-sm">
+                                <input type="text" placeholder="职位名称" class="form-control input-sm">
                             </div>
                             <input class="btn btn-default btn-sm" type="submit" value="搜索">
                         </form>
@@ -197,6 +203,15 @@
     </div>
 </section>
 <section id="main-slider" class="no-margin">
+    <div id="home-main-register" class="well">
+        <h4>我要求职</h4>
+        <form class="form-horizontal" action="www-job-hunter-solution.html">
+            <input type="text" class="form-control input-sm" placeholder="我要去那个城市" style="margin-bottom: 10px;">
+            <input type="text" class="form-control input-sm" placeholder="我要做什么" style="margin-bottom: 10px;">
+            <input type="text" class="form-control input-sm" placeholder="联系邮箱或者手机" style="margin-bottom: 6px;">
+            <button type="submit" class="btn btn-warning btn-sm btn-block">注册并获取求职方案</button>
+        </form>
+    </div>
     <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -211,6 +226,7 @@
         <div role="listbox" class="carousel-inner">
             <div class="item" style="background-color: #90DAF7;">
                 <div class="container">
+                    <div class="row">
                     <img alt="..." src="images/slider/bg7.jpg">
 
                     <div class="carousel-caption">
@@ -218,44 +234,50 @@
                             <h1>暑假倾情奉献</h1>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
             <div class="item" style="background-color: #5EBCBE;">
                 <div class="container">
+                    <div class="row">
                     <img alt="..." src="images/slider/bg5.jpg">
 
                     <div class="carousel-caption">
                         YES
                     </div>
+                    </div>
                 </div>
             </div>
             <div class="item active" style="background-color: #000002;">
                 <div class="container">
-                    <img alt="..." src="images/slider/bg6.jpg">
+                    <div class="row">
+                        <img alt="..." src="images/slider/bg6.jpg">
 
-                    <div class="carousel-caption">
-                        ALRIGH
+                        <div class="carousel-caption">
+                            ALRIGH
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Controls -->
         <a data-slide="prev" role="button" href="#carousel-example-generic" class="left carousel-control">
-					<span aria-hidden="true" class="glyphicon glyphicon-chevron-left">
-					</span>
+					<!--<span aria-hidden="true" class="glyphicon glyphicon-chevron-left">-->
+					<!--</span>-->
 					<span class="sr-only">
 						Previous
 					</span>
         </a>
         <a data-slide="next" role="button" href="#carousel-example-generic" class="right carousel-control">
-					<span aria-hidden="true" class="glyphicon glyphicon-chevron-right">
-					</span>
+					<!--<span aria-hidden="true" class="glyphicon glyphicon-chevron-right">-->
+					<!--</span>-->
 					<span class="sr-only">
 						Next
 					</span>
         </a>
     </div>
 </section>
+
 <section id="industry-nav" class="light-gray">
     <div class="container">
         <div class="row">
