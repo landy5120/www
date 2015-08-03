@@ -149,9 +149,9 @@
                     </p>
                 </div>
                 <div class="list-group">
-                    <a class="list-group-item  active" href="member-index.html">我的学校档案</a>
+                    <a class="list-group-item" href="member-index.html">我的学校档案</a>
                     <a class="list-group-item" href="member-basic-info.html">我的基本资料</a>
-                    <a class="list-group-item" href="member-resume.html">我的简历</a>
+                    <a class="list-group-item active" href="member-resume.html">我的简历</a>
                     <a class="list-group-item" href="member-introduce-video.html">我的视频介绍</a>
                     <a class="list-group-item" href="member-works.html">我的作品</a>
                     <a class="list-group-item" href="member-safe-set.html">隐私安全设置</a>
@@ -160,202 +160,104 @@
             <div class="col-md-10">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#education">我的教育经历</a></li>
-                            <li><a data-toggle="tab" href="#point">学校成绩</a></li>
-                            <li><a data-toggle="tab" href="#praise">奖励及证书</a></li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div id="education" class="tab-pane fade active in">
-                                <br/>
-
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label" for="time-1">时间</label>
-
-                                        <div class="col-lg-2">
-                                            <select id="time-1" class="form-control input-sm">
-                                                <option>2015</option>
-                                                <option>2014</option>
-                                                <option>2013</option>
-                                                <option>2012</option>
-                                                <option>2011</option>
-                                                <option>2009</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <select id="universisty-month2" class="form-control input-sm">
-                                                <option>1月</option>
-                                                <option>2月</option>
-                                                <option>3月</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-1">
-                                            <strong>到</strong>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <select id="universisty-2" class="form-control input-sm">
-                                                <option>2015</option>
-                                                <option>2014</option>
-                                                <option>2013</option>
-                                                <option>2012</option>
-                                                <option>2011</option>
-                                                <option>2009</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <select id="universisty-3" class="form-control input-sm">
-                                                <option>1月</option>
-                                                <option>2月</option>
-                                                <option>3月</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label" for="inputPassword">学校</label>
-
-                                        <div class="col-lg-4">
-                                            <input type="text" placeholder="学校名称" id="inputPassword"
-                                                   class="form-control input-sm">
-
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label" for="time-1">专业</label>
-
-                                        <div class="col-lg-4">
-                                            <input type="text" placeholder="专业名称" id="" class="form-control input-sm">
-                                        </div>
-                                        <div class="col-lg-1">
-                                            <button class="btn btn-sm btn-default">选择专业</button>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <input type="text" placeholder="如果没有则自行输入" id=""
-                                                   class="form-control input-sm">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label" for="university">学历</label>
-
-                                        <div class="col-lg-4">
-                                            <select id="university" class="form-control input-sm">
-                                                <option>初中及以下</option>
-                                                <option>高中</option>
-                                                <option>中技</option>
-                                                <option>中专</option>
-                                                <option>大专</option>
-                                                <option>本科</option>
-                                                <option>硕士</option>
-                                                <option>博士</option>
-                                                <option selected="selected">不限</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> 全日制
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label" for="textArea">学习描述</label>
-
-                                        <div class="col-lg-9">
-                                            <textarea id="textArea" rows="5" class="form-control"></textarea>
-                                            <span class="help-block"></span>
-
-                                            <p class="text-muted">你可以输入2000字</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-10 col-lg-offset-2">
-                                            <button class="btn btn-success right-15pix" type="submit">保存</button>
-                                            <a href="" class="text-danger"><strong>X</strong></a>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="col-md-offset-10">
-                                    <a href="">继续添加</a>
-                                </div>
-                            </div>
-                            <div id="point" class="tab-pane fade well">
-                                <h5>
-                                    <a class="right-15pix">大四上学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大四下学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大三上学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大三下学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大二上学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大二下学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大一上学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <h5>
-                                    <a class="right-15pix">大一下学期成绩单.pdf</a><a href="" class="text-danger"><strong>X</strong></a>
-                                </h5>
-                                <button class="btn btn-success btn-sm">上传成绩单</button>
-                            </div>
-                            <div id="praise" class="tab-pane fade">
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="images/icon/person/2-128.png">
-                                        <div class="caption">
-                                            <h5 class="text-center"><a href="www-course-detail.html">英语四级证书</a>
-                                            <a href="" class="text-danger"><strong>X</strong></a> </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="images/icon/person/2-128.png">
-
-                                        <div class="caption">
-                                            <h5 class="text-center"><a href="www-course-detail.html">英语六级证书</a>
-                                            <a href="" class="text-danger"><strong>X</strong></a> </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="images/icon/person/2-128.png">
-                                        <div class="caption">
-                                            <h5 class="text-center"><a href="www-course-detail.html">国家一级奖学金证书</a>
-                                            <a href="" class="text-danger"><strong>X</strong></a> </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="thumbnail">
-                                        <img src="images/icon/person/2-128.png">
-
-                                        <div class="caption">
-                                            <h5 class="text-info text-center">国家一级奖学金证书
-                                            <a href="" class="text-danger"><strong>X</strong></a> </h5>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-5">
-                                    <button class="btn btn-sm btn-success">上传证书</button>
-                                </div>
-                            </div>
-
+                        <h5 class="page-header">我的简历</h5>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th><th>简历名称</th><th>公开状态</th>
+                                    <th>创建时间</th><th>更新时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td><td>中文简历</td>
+                                    <td><button class="btn-xs btn btn-default" disabled>完全保密</button> </td>
+                                    <td>2014-09-12</td>
+                                    <td>2014-09-12</td>
+                                    <td>
+                                        <a class="btn btn-xs btn-success right-15pix">预览</a>
+                                        <a class="btn btn-xs btn-success right-15pix">修改</a>
+                                        <a class="btn btn-xs btn-warning right-15pix">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-md-offset-2">
+                            <button class="btn btn-sm btn-success">创建简历</button>
+                            <button class="btn btn-sm btn-success">导入简历</button>
                         </div>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h5 class="page-header">谁看了我的简历</h5>
+                        <div class="well">
+                            <div class="col-md-6"><h2><small>你的简历最近1月被浏览了</small><strong class="text-info">3</strong><small>次</small></h2></div>
+                            <div class="col-md-3"><h2><strong class="text-info">300</strong><small>次被浏览</small></h2></div>
+                            <div class="col-md-3"><h2><strong class="text-info">800</strong><small>次搜索</small></h2></div>
+                            <div class="col-md-12">
+                                <a href="" >购买服务</a><span class="text-muted"> 即可看谁看了我的简历, 每月服务费用1个银币</span>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h5 class="page-header">推荐职位</h5>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="images/icon/person/2-128.png">
+                                <div class="caption">
+                                    <h5 class="text-center"><a href="www-position-detail.html">PHP开发工程师</a> </h5>
+                                    <p class="text-center text-info">深圳市腾邦国际有限公司</p>
+                                    <p class="text-muted">校招职位, 火热进行中</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="images/icon/person/2-128.png">
+                                <div class="caption">
+                                    <h5 class="text-center"><a href="www-position-detail.html">PHP开发工程师</a> </h5>
+                                    <p class="text-center text-info">深圳市腾邦国际有限公司</p>
+                                    <p class="text-muted">校招职位, 火热进行中</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="images/icon/person/2-128.png">
+                                <div class="caption">
+                                    <h5 class="text-center"><a href="www-position-detail.html">PHP开发工程师</a> </h5>
+                                    <p class="text-center text-info">深圳市腾邦国际有限公司</p>
+                                    <p class="text-muted">校招职位, 火热进行中</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="images/icon/person/2-128.png">
+                                <div class="caption">
+                                    <h5 class="text-center"><a href="www-position-detail.html">PHP开发工程师</a> </h5>
+                                    <p class="text-center text-info">深圳市腾邦国际有限公司</p>
+                                    <p class="text-muted">校招职位, 火热进行中</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <img src="images/icon/person/2-128.png">
+                                <div class="caption">
+                                    <h5 class="text-center"><a href="www-position-detail.html">PHP开发工程师</a> </h5>
+                                    <p class="text-center text-info">深圳市腾邦国际有限公司</p>
+                                    <p class="text-muted">校招职位, 火热进行中</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
