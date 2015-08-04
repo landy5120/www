@@ -303,3 +303,10 @@ table a:not(.btn), .table a:not(.btn) {
         display: block;
     }
 }
+#www-footer {
+    border-top: solid 1px #ccc;
+}
+
+#school-recruit-index .page-header {
+    margin-top: 10px;
+}

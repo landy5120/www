@@ -1,0 +1,108 @@
+#www-footer a {
+    color: #666;
+}
+.light-gray {
+    background-color: #f2f2f2;
+}
+/*.navbar-default {*/
+    /*background: #6cae2b none repeat scroll 0 0;*/
+    /*border-color: #6cae2b;*/
+/*}*/
+section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#main-nav .nav-item {
+    display: inline-block;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    font-weight: 700;
+    height: 46px;
+    line-height: 46px;
+    transition: color 0.1s linear 0s;
+    width: 215px;
+}
+
+#main-nav .icon_1 {
+    cursor: pointer;
+    float: left;
+    height: 46px;
+    margin-right: 0px;
+    width: 57px;
+    font-size: 40px;
+}
+
+#main-nav #last {
+    border-right: solid 1px #ccc;
+}
+
+#www-footer {
+    border-top: solid 1px #ccc;
+    background: none;
+}
+#main-content .page-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#main-content a {
+    color: #666;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+#online-main-content {
+    background: #1c2343 none repeat scroll 0 0;
+}
+#online-video-banner {
+    background: rgba(0, 0, 0, 0) url("../images/enterpirse/banner.jpg") no-repeat scroll center top;
+    /*height: 850px;*/
+    padding-top: 350px;
+}
+#online-video-banner .row {
+    margin-bottom: 30px;
+}
+#online-video-banner .media {
+    border-bottom: solid 1px #eee;
+}
+.video-box {
+    border: solid 4px #0c7cd5;
+    height: 500px;
+    background: #000 no-repeat;
+}
+#video-list {
+    overflow:scroll; /*任何时候都强制显示滚动条*/
+    overflow:auto; /*需要的时候会出现滚动条*/
+    overflow-y:auto; /*控制Y方向的滚动条*/
+    padding: 0;
+}
+#video-list .thumbnail {
+    background: transparent;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+}
+#video-list h4 {
+    margin-top: -40px;
+    color: #fff;
+
+}
+#video-list h5 {
+    color: #ffffff;
+}
+.text-white {
+    color:#fff;
+}
+.text-green {
+    color: #65a724;
+}
+#recuit-video-area .thumbnail {
+    border: none;
+}
+
+#recuit-video-area #WiredWizard {
+    margin-top: 30px;
+}
