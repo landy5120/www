@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="css/theme.css" media="screen"/>
-    <title>注册启承在线</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="css/tabs.css" media="screen">
+    <title>offer有约</title>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js">
@@ -24,87 +26,252 @@
                 <a href="www-index.html" class="navbar-brand">
                     offer有约
                 </a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main-top">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
             <div class="navbar-collapse collapse" id="navbar-main-top">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="www-index.html">
-                            |
-                        </a>
-                    </li>
-                    <li>
                         <a href="www-register.html">
-                            注册启承在线账号
+                            <span class="right-15pix">| </span>
+                            会员注册
                         </a>
                     </li>
 
                 </ul>
-
                 <ul class="nav navbar-nav navbar-right">
-
                     <li>
-                        <a href="www-login.html" target="_blank">
+                        <a href="www-login.html">
                             已经有账号, 直接登陆
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<section id="register-f-1">
+<section id="member-register">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="well bs-component">
-                    <form class="form-horizontal" role="form" data-toggle="validator">
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputEmail">邮箱</label>
+            <div class="col-md-12">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active">
+                            <a aria-expanded="true" data-toggle="tab" href="#ad">
+                                个人注册
+                            </a>
+                        </li>
 
-                            <div class="col-lg-10">
-                                <input type="email" placeholder="邮箱" id="inputEmail" class="form-control" data-error="email格式不正确" required>
-                                <p class="text-muted">请输入常用邮箱, 可用于登陆和找回密码</p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputPassword">密码</label>
+                        <li class="tab-red">
+                            <a aria-expanded="false" data-toggle="tab" href="#en">
+                                企业HR注册
+                            </a>
+                        </li>
 
-                            <div class="col-lg-10">
-                                <input type="password" placeholder="密码" id="inputPassword"
-                                       class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="inputPassword">密码确认</label>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="ad" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="well bs-component">
+                                        <form data-toggle="validator" role="form" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-lg-2 control-label">邮箱</label>
 
-                            <div class="col-lg-10">
-                                <input type="password" placeholder="密码" id="inputPasswordConfirm"
-                                       class="form-control" required>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">我同意 <a href="hr-register-terms-of-service.html"
-                                                                      target="_blank">"服务条款"</a>和
-                                        <a href="hr-register-privile-policy.html"
-                                           target="_blank">"网络用户信息保护权及个人信息利用政策"</a>
-                                    </label>
+                                                <div class="col-lg-10">
+                                                    <input type="email" required="" data-error="email格式不正确"
+                                                           class="form-control input-sm"
+                                                           id="inputEmail" placeholder="邮箱">
+
+                                                    <p class="text-muted">请输入常用邮箱, 用户激活账号和找回密码等</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="col-lg-2 control-label">密码</label>
+
+                                                <div class="col-lg-10">
+                                                    <input type="password" required="" class="form-control input-sm"
+                                                           id="inputPassword"
+                                                           placeholder="密码">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="col-lg-2 control-label">密码确认</label>
+
+                                                <div class="col-lg-10">
+                                                    <input type="password" required="" class="form-control input-sm"
+                                                           id="inputPasswordConfirm"
+                                                           placeholder="密码">
+
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox">我同意 <a target="_blank"
+                                                                                          href="hr-register-terms-of-service.html">"服务条款"</a>和
+                                                            <a target="_blank"
+                                                               href="hr-register-privile-policy.html">"网络用户信息保护权及个人信息利用政策"</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-4 col-lg-offset-2">
+                                                    <button type="submit" class="btn btn-success btn-block">立即注册</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="page-header">注册后你可以获得</h4>
+
+                                    <div class="fa-hover col-md-12"><h5 class="text-green"><i
+                                            class="fa fa-check-square"></i> 观看免费平台所有免费课程
+                                    </h5></div>
+                                    <div class="fa-hover col-md-12"><h5 class="text-green"><i
+                                            class="fa fa-check-square"></i> 建立自己的求职目标
+                                    </h5></div>
+                                    <div class="fa-hover col-md-12"><h5 class="text-green"><i
+                                            class="fa fa-check-square"></i> 记录所有的学习进度
+                                    </h5></div>
+                                    <div class="fa-hover col-md-12"><h5 class="text-green"><i
+                                            class="fa fa-check-square"></i> 投递企业招聘职位 </h5>
+                                    </div>
+                                    <div class="fa-hover col-md-12"><h5 class="text-green"><i
+                                            class="fa fa-check-square"></i> 享受会员优惠活动 </h5>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-2">
-                                <button class="btn btn-success" type="submit">立即注册</button>
+                        <div id="en" class="tab-pane">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="well">
+                                        <form action="www-found-talent-will.html" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="wherego" class="col-lg-2 control-label">公司名称</label>
+
+                                                <div class="col-lg-10">
+                                                    <input type="text" value="offer有约" class="form-control input-sm"
+                                                           id="enterprise-name" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="wherego" class="col-lg-2 control-label">登陆账号</label>
+
+                                                <div class="col-lg-10">
+                                                    <input type="text" value="邮箱, 手机号等" class="form-control input-sm"
+                                                           id="wherego"
+                                                           placeholder="">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="whatido" class="col-lg-2 control-label">登陆密码</label>
+
+                                                <div class="col-lg-10">
+                                                    <input type="text" value="******" class="form-control input-sm"
+                                                           id="whatido"
+                                                           placeholder="">
+                                                    <input type="checkbox"> 我已经阅读并且同意<a href="">"offer在约注册企业注册协议"</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-offset-2 col-lg-4">
+                                                    <button class="btn btn-block btn-success" type="submit">立即注册
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                    <div class="btn btn-primary btn-xs" id="source-button" style="display: none;">&lt; &gt;</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<script src="js/validator.min.js">
+<section id="www-footer" class="light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>关于</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">关于我们</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">关注微信</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">新郎微博</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">站点地图</a></li>
 
+                    <li><a class="link-list-a" href="./help/#support">职位招聘</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是学员</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何购买课程</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何使用优惠券</a></li>
+                    <li><a class="link-list-a" href="https://twitter.com/bootswatch">什么是学习币</a></li>
+                    <li><a class="link-list-a" href="https://github.com/thomaspark/bootswatch/">什么是学习码</a></li>
+                    <li><a class="link-list-a" href="./help/#api">什么是学分</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是企业</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">如何进行合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">如何开具发票</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>我是培训机构</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">申请合作</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">机构权益</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">申请为课程合作机构</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h4>社区互动</h4>
+                <ul class="list-unstyled">
+                    <li><a class="link-list-a" href="http://news.bootswatch.com">交流论坛</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员微信群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员QQ群</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">课程登记</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">意见反馈</a></li>
+                    <li><a class="link-list-a" href="http://feeds.feedburner.com/bootswatch">学员声音</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="www-copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <ul class="list-inline">
+                    <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 400-851-9651</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(课程合作)
+                    </li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        landy@jielijiaoyu.com(商务合作)
+                    </li>
+                </ul>
+                <p> Copyright&copy;2005-2015 qicheng.com 启承教育</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-1.10.2.min.js">
+</script>
+<script src="js/bootstrap.min.js">
 </script>
 </body>
 </html>

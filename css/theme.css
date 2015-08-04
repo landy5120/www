@@ -310,3 +310,7 @@ table a:not(.btn), .table a:not(.btn) {
 #school-recruit-index .page-header {
     margin-top: 10px;
 }
+
+.text-green {
+    color: #65a724;
+}
